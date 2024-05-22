@@ -27,12 +27,12 @@ jobs:
       run: npm run build:prod
     
     - name: Routing
-      run: cp dist/angular-github-actions/index.html dist/angular-github-actions/404.html
+      run: cp dist/WE4B_Amstragran/index.html dist/WE4B_Amstragran/404.html
 
     - name: Deploy
       if: success()
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: dist/angular-github-actions
+        publish_dir: dist/WE4B_Amstragran
         enable_jekyll: true
